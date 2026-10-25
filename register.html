@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Register</title>
 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width", initial-scale="1.0">
+
+        <title>Register</title>
         <link rel="stylesheet" href="style.css">
+        
     </head>
 
 
@@ -28,20 +32,22 @@
                 <p>Fill in your deatails to register for an event.</p>
 
 
-                <form>
+                <form id="registration-form">
 
-                    <label>Full Name :</label>
-                    <input type="text" name="fullname" placeholder="Enter your full name">
+                    <label for="fullname">Full Name :</label>
+                    <input type="text" id="fullname" name="fullname"
+                     placeholder="Enter your full name" required>
 
-                    <label>University Email:</label>
-                    <input type="email" name="email" placeholder="Enter your university Email">
+                    <label for="email">University Email:</label>
+                    <input type="email" id="email" name="email"
+                     placeholder="Enter your university Email" required>
 
                     <label>Phone Number:</label>
-                    <input type="tel" name="phone" placeholder="Enter your Phone number">
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your Phone number" required>
 
-                    <label>Choose an Event:</label>
+                    <label for="event">Choose an Event:</label>
 
-                    <select id="" name="event" required>
+                    <select id="event" name="event" required>
 
                         <option value="">-- Select an Event --</option>
 
@@ -72,13 +78,13 @@
 
                         <legend>How did you hear about us?</legend>
 
-                        <input type="radio" name="source" value="Social Media" required>
+                        <input type="radio" id="Social" name="source" value="Social Media" required>
                         <label for="Social">Social Media</label>
 
-                        <input type="radio" name="source" value="Friend">
+                        <input type="radio" id="friend" name="source" value="Friend">
                         <label for="friend">Friend</label>
 
-                        <input type="radio" name="source" value="University">
+                        <input type="radio" id="university" name="source" value="University">
                         <label for="university">University</label>
 
                     </fieldset>
@@ -94,8 +100,8 @@
 
             <section>
                 <h2>Saved Registeration</h2>
-                <ul id="registeration-list"></ul>
-                <button type="button" id="">Clear All</button>
+                <ul id="registration-list"></ul>
+                <button type="button" id="clear-btn">Clear All</button>
             </section>
         </main>
 

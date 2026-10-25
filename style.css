@@ -25,7 +25,7 @@ h2 {
 }
 
 a {
-    transition: color 0.3s; background-color: 0.3s;
+    transition: color 0.3s, background-color 0.3s;
 }
 
 
@@ -66,7 +66,7 @@ nav {
 
 nav > a {
     color: #e7e7ff;
-    text-decoration: darkblue;
+    text-decoration: none;
     padding: 9px 18px;
     border-radius: 8px;
     font-weight: bold;
@@ -148,7 +148,7 @@ figure {
 
 
 form label {
-    display: black;
+    display: block;
     font-weight: bold;
     margin: 18px 0 6px;
     color: #292748;
@@ -307,4 +307,14 @@ footer p {
 
 
 
+.event-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.event-list > article {
+    flex: 1 1 300px;
+    margin: 0;
+}
 
