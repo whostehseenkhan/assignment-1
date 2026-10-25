@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+
+    <body>
+
+        <header>
+            <h1> AI Society</h1>
+            <p>Join our University Club</p>
+        </header>
+
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="register.html" class="active">Register</a>
+        </nav>
+
+
+        <main>
+            <section>
+                <h2>Event Registeration Form</h2>
+                <p>Fill in your deatails to register for an event.</p>
+
+
+                <form>
+
+                    <label>Full Name :</label>
+                    <input type="text" name="fullname" placeholder="Enter your full name">
+
+                    <label>University Email:</label>
+                    <input type="email" name="email" placeholder="Enter your university Email">
+
+                    <label>Phone Number:</label>
+                    <input type="tel" name="phone" placeholder="Enter your Phone number">
+
+                    <label>Choose an Event:</label>
+
+                    <select id="" name="event" required>
+
+                        <option value="">-- Select an Event --</option>
+
+
+                    <option value="Introduction to Artificial Intoelligence">
+                        Introduction to Artificial Intoelligence
+                    </option>
+
+
+                    <option value="Web Development Workshop">
+                        Web Development Workshop
+                    </option>
+
+
+                    <option value="Python Programming Session">
+                        Python Programming Session
+                    </option>
+
+
+                    <option value="AI Project Competition">
+                        AI Project Competition
+                    </option>
+                
+                    </select>
+
+
+                    <fieldset>
+
+                        <legend>How did you hear about us?</legend>
+
+                        <input type="radio" name="source" value="Social Media" required>
+                        <label for="Social">Social Media</label>
+
+                        <input type="radio" name="source" value="Friend">
+                        <label for="friend">Friend</label>
+
+                        <input type="radio" name="source" value="University">
+                        <label for="university">University</label>
+
+                    </fieldset>
+
+
+                    <button type="submit">Register Now</button>
+                </form>
+
+                <p id="message"></p>
+
+            </section>
+
+
+            <section>
+                <h2>Saved Registeration</h2>
+                <ul id="registeration-list"></ul>
+                <button type="button" id="">Clear All</button>
+            </section>
+        </main>
+
+        <footer>
+            <p>AI Society Club</p>
+        </footer>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
